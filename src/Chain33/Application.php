@@ -13,6 +13,7 @@ use Pimple\Container;
  * @method static Evm\Client Evm
  * @method static Mempool\Client Mempool
  * @method static Miner\Client Miner
+ * @method static Net\Client Net
  * @method static Multisig\Client Multisig
  * @method static Oracle\Client Oracle
  * @method static ParaCross\Client ParaCross
@@ -43,6 +44,7 @@ class Application extends Container
         Manage\ServiceProvider::class,
         Mempool\ServiceProvider::class,
         Miner\ServiceProvider::class,
+        Net\ServiceProvider::class,
         Multisig\ServiceProvider::class,
         Oracle\ServiceProvider::class,
         ParaCross\ServiceProvider::class,
